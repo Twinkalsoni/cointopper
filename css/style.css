@@ -1,0 +1,589 @@
+body{
+   font: 20px/1.5, 'Rubik',sans-serif;
+   padding:0;
+   margin:0;
+   background-color:white;
+}
+.container{
+    width: 80%;
+    margin:auto;
+    overflow:hidden;
+}
+header{
+    background:white;
+    font-family:'Rubik',sans-serif;
+    color:black; 
+    padding: 0px;
+    margin: 20px 0px;
+    margin-right: 100px;
+    width: 100%;
+    display: block;
+    min-height:70PX;
+    border-bottom:blue;
+    font-weight: 500;
+}
+ header.current ul{
+    margin: 0px;
+    padding: 0px;
+    font-style: bold;
+}
+ header li{
+    font-size:16px;
+    display:inline-block;
+    padding: 10px -1px;
+    margin: 0px 15px;
+    margin-top: auto;
+    font-weight:500;
+}
+li:active button{
+    color: blue;
+}
+li:hover{
+    color:blue;
+    cursor: pointer;
+    font-weight:400;
+}
+header button {
+    background: linear-gradient(to right,#1c60b8 1%,#3c99dd 100%);
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    border:1px solid transparent;
+    padding: 10px 25px;
+    line-height: 10px;
+}
+header #branding  {
+    float:left;
+    margin:0px;
+    padding: 0px 50px;
+    margin-right: 20px;
+}
+#branding header image{
+    max-width:170px;
+    vertical-align: middle;
+    height:auto;
+    margin:15px;
+    padding:15px;
+}
+.navbar{
+    font-weight: 500;
+    font-size: 16px;
+    display: block;
+    float: right;
+    margin-top: 7px;
+    margin-left: 260px;
+    height: auto;
+    width: auto;
+    border-top: 0;
+}
+header .current a{
+    color:blue;
+    font-style: bold;
+    padding: 10px 25px;
+}
+.row{
+    width: 100%;
+    font-family:'Rubik',sans-serif;
+    color: #838383;
+    box-sizing: border-box;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding:0px 10px;
+    font-weight: 545;
+} 
+.coindetailtop .row ul{
+     color: white;
+    float:left;
+    padding: 0px 15px;
+    margin:15px;
+    font-size: 14px;
+    text-align:center;
+    display:flex;
+    text-decoration: none;
+}
+.coindetailtop {
+    background: linear-gradient(to right,#1c60b8 1%,#3c99dd 100%);
+    padding: 0px 0px;
+    width: 100%;
+}
+.coindetailtop .row ul li{
+    display: flex;
+    margin: 0 0 2px;
+    color: white;
+    font-size: 14px;
+    padding: 1px 20px;
+    display: inline-block; 
+    text-align: center;
+}
+.row span{
+    position:relative;
+    font-size: 15px;
+    font-family:rubic,sans-serif;
+}
+.main{
+    margin: auto;
+    padding: auto;
+    display: block;
+    font-family: 'Rubik',sans-serif;
+    position: relative;
+    min-height: 1px;
+    padding-right:0px 15px;
+    padding-left: 15px;
+}
+.main h1{
+    font-size: 32px;
+    float: left;
+    margin: 45px 10px 24px;
+    font-weight: 700;
+    line-height: 28px;
+    color:#505050;
+}
+.main button{
+    float: right;
+    background-color: #cdced5;
+    color: white;
+    border: 0;
+    display: inline-block;
+    padding: 6px 15px;
+    margin: 45px 10px 24px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.bx1{
+    font-family: 'Rubik',sans-serif;  
+    width: 15%;
+    margin:5px;
+    padding:5px; 
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-sizing:border-box;
+    background: linear-gradient(to right,#bcc0c5 1%,#3c99dd 100%); 
+    float: left;
+    z-index: 1;
+}
+.bx2{
+    font-family: 'Rubik',sans-serif;  
+    width: 15%;
+    margin:5px;
+    padding:5px; 
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-sizing:border-box;
+    background:linear-gradient(to left, #105050 1%, #102838 100%);  
+    float: left;
+    z-index: 1;
+}
+.bx3{
+    font-family: 'Rubik',sans-serif;  
+    width: 15%;
+    margin:5px;
+    padding:5px; 
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-sizing:border-box;
+    background: linear-gradient(to right,#5b60a3 1%,#3c99dd 100%); 
+    float: left;
+    z-index: 1;
+}
+.bx4{
+    font-family: 'Rubik',sans-serif;  
+    width: 15%;
+    margin:5px;
+    padding:5px; 
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-sizing:border-box;
+    background: linear-gradient(to right,#c4bead 1%,#848a8f 100%); 
+    float: left;
+    z-index: 1;
+}
+.bx5{
+    font-family: 'Rubik',sans-serif;  
+    width: 15%;
+    margin:5px;
+    padding:5px; 
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-sizing:border-box;
+    background:linear-gradient(to left, #F8B828 1%, #F0B028 100%);
+    float: left;
+    z-index: 1;
+}
+.bx6{
+    font-family: 'Rubik',sans-serif;  
+    width: 15%;
+    margin:5px;
+    padding:5px; 
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-sizing:border-box;
+    background:linear-gradient(to left,#ac6135 1%,#fad961 100%); 
+    float: left;
+    z-index: 1;
+}
+.coin-top-up{
+    background:url("C:\Users\hp\Desktop\cointoper\images\Cointopper_files\Cointopper_files\Double Arrow.jpg")left top no-repeat;
+    width: 10px;
+    height:10px;
+    background-size:100px;
+    margin:7px 4px 0 0;
+    float:left;
+}
+.white-circle-top{
+    float:right;
+    background:#f1eded;
+    border-radius: 50%;
+    padding: 4px;
+    width: 25px;
+    height: 25px;
+    
+}
+.top-image{
+    display: block;
+    position:absolute;
+    float:right;
+    max-width: 62px;
+    max-height:62px;
+    right: 2px;
+    bottom: 4px;
+    font-size: 72px;
+    opacity: .4;
+} 
+.box h1 {
+    font-size: 15px;
+    color: white;
+    padding: 0px 0px;
+    margin: 5px 0px;
+    text-align:left;
+    position: relative;
+    display:flex;
+    box-sizing: border-box;
+}
+
+.box p{
+    font-size: 14px;
+    color:white;
+    margin: auto;
+    padding: auto;
+    text-align: left;
+    position: relative;
+}
+.box span{
+    color: white;
+    font-size: 11px;
+    font-family: 'Rubik',sans-serif;
+}
+
+.box:hover h1  {
+    background-color:lightcoral;
+    width:45%;
+    transition:0.5s;
+    box-sizing:border-box;
+}
+.stories h2{
+    color: #505050;
+    font-size: 32px;
+    font-weight:550;
+    font-family: 'Rubik',sans-serif;
+    margin: 0 0 24px;
+    line-height: 28px;
+    box-sizing: border-box;
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.stories button{
+    float:right;
+    font-size: 10px;
+    cursor: pointer;  
+}
+.search-box{
+    color:#cdced5;
+    border: 0;
+    display:inline-flex;
+    font-size: 14px;
+    float:right;
+    position: relative;
+    padding:5px 10px 10px 28px;
+    margin: 0px -5px;
+    margin-top: -65px;
+    margin-right: -5px;
+    margin-left: -5px;
+}
+.serch-btn{
+    font-size: 14px;
+    background-color: #cdced5;
+    vertical-align: middle;
+    display: flex;
+    padding: 0px 5px;
+}
+.search-txt{
+    font-size: 17px;
+    background-color: #cdced5;
+    color: white;
+    border: 0;
+    border-radius: 9px;
+    line-height: 1;
+    display: block;
+    padding: 5px 10px 5px 28px;
+    margin: auto;
+    font-weight: 300;
+    color:white;
+    background-image: none;
+    font-family: inherit;
+    letter-spacing: normal;
+    cursor: text;
+    
+}
+
+.fa-search{
+    color:white;
+    position:absolute;
+    z-index: 2;
+    left:17px;
+    font-size: 14px;
+    width: 20%;
+    margin-left:-3.5px;
+    padding: 10px 23px;
+    top: 1;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+}
+.search-box .text{
+    background-color: #cdced5;
+    float: right;
+    border-radius: 9px;
+    color: white;
+    width: 30px;
+    border: 0;
+    background-image: none;
+    padding: 6px 13px;
+    margin: 5px 10px;
+    cursor: pointer;
+}
+/*
+#cryptocurrencies .table tr{
+    margin: 30px 10px;
+    padding: 32px 7px;
+}
+.stories .table {
+    font-family:'Rubik',sans-serif; 
+    padding: 32px 7px;
+    margin-left: 10px;
+}
+.table td{
+    padding:20px 7px;
+    font-size: 16px;
+    font-family:'Rubik',sans-serif; 
+    font-weight: 700;
+    color: #337ab7;
+    border-bottom: 1px solid #eaeff9;
+    vertical-align: top;
+    box-sizing: border-box;
+    display: table-cell;
+    cursor: pointer;
+}
+.table th{
+    font-size: 11px;
+    font-family:'Rubik',sans-serif;
+    color: #337ab7;
+    cursor: pointer;
+    padding: 0px 15px;
+}
+.table .fa{
+    border-collapse:separate ;
+    border-spacing: 0;
+    text-indent: initial;
+    position: relative;
+    display: block;
+    margin-left: 4px;
+    font-size: 14px;
+}
+.fa fa-angle-up{
+    display: inline-block;
+    text-rendering: auto;
+    box-sizing: border-box;
+}*/
+
+.table-responsive{
+    min-height: .01;
+    overflow-x: auto;
+}
+
+.float threat container{
+    overflow-x: hidden;
+    position:fixed;
+    margin-top: 0px;
+    top: 0px;
+    z-index: 1001;
+    will-change:transform;
+    transform: translateX(165px)translateY(90px);
+    left:0px;
+    width: 1020px;
+    display: block;
+}
+.table-coin-list{
+    border-collapse: separate;
+    border: 0px none rgb(131, 131,131);
+    display: table;
+    width:750px;
+    margin: 0px;
+    margin-top: 10px;
+    
+}
+.table sorter header inner{
+    font: 11px rubik,sans-serif;
+}
+ .tbl number{
+    color:#cdced5;
+    padding-top: 36px;
+}
+.tbl-change{
+    font-family:16px 'Rubik',sans-serif;
+    color:#3C763D;
+    letter-spacing: -0.18px;
+}
+.tbl-cap-title{
+    color:#337ab7;
+    font-size: 16px;
+    font-family:'Rubik',sans-serif;
+    letter-spacing: -0.39px;
+    line-height: 19px;
+    font-weight: 500;
+}
+.tbl-cap-value{
+    color:#9d9ead;
+    font-size: 14px;
+    font-family: 'Rubik',sans-serif;
+    letter-spacing: -0.39px;
+    line-height: 16px;
+}
+.tbl-price{
+    color:#003bb2;
+    font-size: 16px;
+    font-family: 'Rubik',sans-serif;
+    line-height: 19px;
+    letter-spacing: -0.27px;
+}
+.tbl-price2{
+    color: gray;
+    font-size: 14px;
+    font-family: 'Rubik',sans-serif;
+    line-height: 16px;
+    letter-spacing:-0.34px;
+    min-width: 200px;
+}
+.tbl-price1{
+    color:#003bb2;
+    font-size: 16px;
+    font-family: 'Rubik',sans-serif;
+    line-height: 19px;
+    letter-spacing: -0.27px;
+}
+.tbl-price3{
+    color:#003bb2;
+    font-size: 16px;
+    font-family: 'Rubik',sans-serif;
+    line-height: 19px;
+    letter-spacing: -0.27px;
+}
+.data-coins{
+    color:#003bb2;
+    font-size: 16px;
+    font-family: 'Rubik',sans-serif;
+    line-height: 19px;
+    letter-spacing: -0.27px;
+}
+.tbl-m-cap{
+    color:#003bb2;
+    font-size: 16px;
+    font-family: 'Rubik',sans-serif;
+    line-height: 19px;
+    letter-spacing: -0.27px;
+}
+
+
+.tbl num{
+    color: gray;
+}
+.data text{
+    color: gray;
+}
+.table{
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.fa{
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+}
+.tbl-arrow-up, .tbl-aroow-down{
+    background: url(C:\Users\hp\Desktop\cointoper\images\down_arrow_red.png)left top no-repeat;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-size: 100%;
+    margin: 4px 4px 0 0;
+    float:left;
+}
+.tbl-arrow-up{
+    background:url(C:\Users\hp\Desktop\cointoper\images\up_arrow_green.png)left top no-repeat;
+    background-size: 100%;
+}
+.a{
+    color: blue;
+    text-decoration: none;
+}
+.table thead tr th{
+    color:#245da6;
+    padding: 0 8px;
+    font-weight: 500;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing:-0.27px;
+    border: 0;
+    vertical-align: bottom;
+}
+
+.table tbody tr td{
+    color: #245da6;
+    padding: 32px 7px;
+    border-bottom: 1px solid #eaeff9;
+}
+
+.hidden-xs .data text .text right{
+    color: #245da6;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.27px;
+}
+footer p{
+    padding: 0px 15px;
+    font: 16px rubik, sans-serif;
+}

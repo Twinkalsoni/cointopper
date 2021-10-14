@@ -1,0 +1,139 @@
+body{
+   font: 20px/1.5, Arial, Helvetica, sans-serf;
+   padding:0;
+   margin:0;
+   background-color:white;
+}
+.container{
+    width: 80%;
+    margin:auto;
+    overflow:hidden;
+}
+
+ul{
+    margin: 15px;
+    padding: 10px;
+    font-style: bold;
+}
+header{
+    background:white;
+    color:black; 
+    padding: top 30px;
+    margin: 20px;
+    margin-bottom:45px;
+    width: 100%;
+    display: block;
+    min-height:70PX;
+    border-bottom:blue;
+}
+header li{
+    font-size :20px;
+    float: left;
+    display:inline-block;
+    padding: 0 20px 0 20px;
+}
+header #branding {
+    float:left;
+    margin: 10px;
+}
+header .container, image{
+    min-width: 188px;
+    height:auto;
+    vertical-align: middle;
+    justify-content: start;
+}
+header nav{
+    float: right;
+    margin-top:10px;
+}
+header .highlight, header .current a{
+    color:blue;
+    font-weight: bold;
+}
+.row{
+    width: 750px;
+    font-size: 18px;
+    color: #838383;
+    box-sizing: border-box;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-right:30px;
+    padding-left:30px;
+} 
+
+.coindetailtop .row ul{
+     color: white; 
+    float:left;
+    font-size: 18px;
+    text-align:center;
+    display:flex;
+    text-decoration: none;
+}
+.coindetailtop {
+    background: linear-gradient(to right,#1c60b8 1%,#3c99dd 100%);
+    padding: 16px;
+}
+
+.coindetailtop .row ul li{
+    display: flex;
+    margin: 10px;
+ color: white;
+    font-size: 18px;   
+}
+.main h1{
+    font-size: 35px;
+    float: left;
+    font-style:bold;
+    color: gray;
+}
+.main form
+{
+    float: right;
+    margin-top: 15px;
+}
+.topcoinbox .box{
+    box-sizing:content-box;
+    background: linear-gradient(to right,#1c60b8 1%,#3c99dd 100%);
+    float: left;
+    width: 10%;
+    padding: 10px;
+    text-align:center;
+    padding-top: 10px;
+    padding-left: 70px;
+    display: inline-table;
+}
+.topcoinbox h1 {
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    text-align:left;
+    position: relative;
+    display:flex;
+    box-sizing: border-box;
+}
+.topcoinbox p{
+    font-size: 20px;
+    color:white;
+    margin: auto;
+    padding: auto;
+    text-align: left;
+}
+.stories h1{
+    font-size: 30px;
+    padding: 20px;
+    margin: 10px;
+    padding-top: 50px;
+}
+.stories form{
+    float:right;
+    font-size: 10px;
+    
+}
+.stories .table {
+    color:blue;
+    margin-left: 10px;
+    width: 400%;
+    font-style: bold;
+
+}
