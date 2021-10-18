@@ -84,6 +84,33 @@ header .current a{
     font-style: bold;
     padding: 10px 25px;
 }
+/*.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}*/
+.navbar-toggle{
+    color: black;
+    border-color: #ddd;
+     position: relative;
+    float:right;
+     padding: 9px 10px;
+        margin-top: 8px;
+        margin-right: 15px;
+        margin-bottom: 8px;
+        background-color: transparent;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        display: block;
+
+        
+
+}
 .row{
     width: 100%;
     font-family:'Rubik',sans-serif;
@@ -114,7 +141,7 @@ header .current a{
     margin: 0 0 2px;
     color: white;
     font-size: 14px;
-    padding: 1px 20px;
+    padding: 1px 50px;
     display: inline-block; 
     text-align: center;
 }
@@ -159,6 +186,7 @@ header .current a{
 }
 
 .bx1{
+    color: white;
     font-family: 'Rubik',sans-serif;  
     width: 15%;
     margin:5px;
@@ -173,6 +201,7 @@ header .current a{
     z-index: 1;
 }
 .bx2{
+    color: white;
     font-family: 'Rubik',sans-serif;  
     width: 15%;
     margin:5px;
@@ -187,6 +216,7 @@ header .current a{
     z-index: 1;
 }
 .bx3{
+    color: white;
     font-family: 'Rubik',sans-serif;  
     width: 15%;
     margin:5px;
@@ -201,6 +231,7 @@ header .current a{
     z-index: 1;
 }
 .bx4{
+    color: white;
     font-family: 'Rubik',sans-serif;  
     width: 15%;
     margin:5px;
@@ -215,6 +246,7 @@ header .current a{
     z-index: 1;
 }
 .bx5{
+    color: white;
     font-family: 'Rubik',sans-serif;  
     width: 15%;
     margin:5px;
@@ -229,6 +261,7 @@ header .current a{
     z-index: 1;
 }
 .bx6{
+    color: white;
     font-family: 'Rubik',sans-serif;  
     width: 15%;
     margin:5px;
@@ -238,12 +271,12 @@ header .current a{
     position: relative;
     overflow: hidden;
     box-sizing:border-box;
-    background:linear-gradient(to left,#ac6135 1%,#fad961 100%); 
+    background:linear-gradient(to left,#6d6b69 1%,#fad961 100%); 
     float: left;
     z-index: 1;
 }
-.coin-top-up{
-    background:url("C:\Users\hp\Desktop\cointoper\images\Cointopper_files\Cointopper_files\Double Arrow.jpg")left top no-repeat;
+.fa fa-angle-double-right{
+    color: white;
     width: 10px;
     height:10px;
     background-size:100px;
@@ -434,6 +467,7 @@ header .current a{
 .table-responsive{
     min-height: .01;
     overflow-x: auto;
+    cursor: pointer;
 }
 
 .float threat container{
@@ -455,12 +489,12 @@ header .current a{
     width:750px;
     margin: 0px;
     margin-top: 10px;
-    
+    cursor: pointer;
 }
 .table sorter header inner{
     font: 11px rubik,sans-serif;
 }
- .tbl number{
+ .tbl-number{
     color:#cdced5;
     padding-top: 36px;
 }
@@ -475,7 +509,7 @@ header .current a{
     font-family:'Rubik',sans-serif;
     letter-spacing: -0.39px;
     line-height: 19px;
-    font-weight: 500;
+    font-weight: 700;
 }
 .tbl-cap-value{
     color:#9d9ead;
@@ -489,7 +523,9 @@ header .current a{
     font-size: 16px;
     font-family: 'Rubik',sans-serif;
     line-height: 19px;
+    font-weight:500;
     letter-spacing: -0.27px;
+    
 }
 .tbl-price2{
     color: gray;
@@ -504,33 +540,24 @@ header .current a{
     font-size: 16px;
     font-family: 'Rubik',sans-serif;
     line-height: 19px;
-    letter-spacing: -0.27px;
 }
 .tbl-price3{
     color:#003bb2;
     font-size: 16px;
     font-family: 'Rubik',sans-serif;
     line-height: 19px;
-    letter-spacing: -0.27px;
 }
 .data-coins{
     color:#003bb2;
     font-size: 16px;
     font-family: 'Rubik',sans-serif;
     line-height: 19px;
-    letter-spacing: -0.27px;
 }
 .tbl-m-cap{
     color:#003bb2;
     font-size: 16px;
     font-family: 'Rubik',sans-serif;
     line-height: 19px;
-    letter-spacing: -0.27px;
-}
-
-
-.tbl num{
-    color: gray;
 }
 .data text{
     color: gray;
@@ -586,4 +613,38 @@ header .current a{
 footer p{
     padding: 0px 15px;
     font: 16px rubik, sans-serif;
+}
+@media(max-width:991px){
+    body{
+        margin-bottom: 0;
+    }
+}
+@media(min-width :1024px){ 
+    header nav{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    }
+}
+@media(min-width:768px){
+    .navbar{
+        border-radius: 4px;
+    }
+}
+@media(max-width:767px){
+    .coindetailtop{
+        margin-bottom: 30px;
+        width: 170%;
+    }
+}
+ @media(min-width:768px){
+        .navbar header{
+            float: left;
+        }
+    }
+@media(max-width:991px){
+    .table-responsive{
+        border:0;
+    }
 }
