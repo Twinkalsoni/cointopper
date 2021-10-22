@@ -22,7 +22,7 @@ header{
     border-bottom:blue;
     font-weight: 500;
 }
- header.current ul{
+ header .current ul{
     margin: 0px;
     padding: 0px;
     font-style: bold;
@@ -84,32 +84,22 @@ header .current a{
     font-style: bold;
     padding: 10px 25px;
 }
-/*.checkbtn{
-    font-size: 30px;
-    color: white;
+.menu-btn{
+    display:none;
     float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}*/
-.navbar-toggle{
-    color: black;
+    color: rgb(131, 114, 114);
+    position: relative;
     border-color: #ddd;
-     position: relative;
-    float:right;
-     padding: 9px 10px;
-        margin-top: 8px;
-        margin-right: 15px;
-        margin-bottom: 8px;
-        background-color: transparent;
-        background-image: none;
-        border: 1px solid transparent;
-        border-radius: 4px;
-        display: block;
-
-        
-
+    font-size: 22px;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
 }
 .row{
     width: 100%;
@@ -420,50 +410,6 @@ header .current a{
     margin: 5px 10px;
     cursor: pointer;
 }
-/*
-#cryptocurrencies .table tr{
-    margin: 30px 10px;
-    padding: 32px 7px;
-}
-.stories .table {
-    font-family:'Rubik',sans-serif; 
-    padding: 32px 7px;
-    margin-left: 10px;
-}
-.table td{
-    padding:20px 7px;
-    font-size: 16px;
-    font-family:'Rubik',sans-serif; 
-    font-weight: 700;
-    color: #337ab7;
-    border-bottom: 1px solid #eaeff9;
-    vertical-align: top;
-    box-sizing: border-box;
-    display: table-cell;
-    cursor: pointer;
-}
-.table th{
-    font-size: 11px;
-    font-family:'Rubik',sans-serif;
-    color: #337ab7;
-    cursor: pointer;
-    padding: 0px 15px;
-}
-.table .fa{
-    border-collapse:separate ;
-    border-spacing: 0;
-    text-indent: initial;
-    position: relative;
-    display: block;
-    margin-left: 4px;
-    font-size: 14px;
-}
-.fa fa-angle-up{
-    display: inline-block;
-    text-rendering: auto;
-    box-sizing: border-box;
-}*/
-
 .table-responsive{
     min-height: .01;
     overflow-x: auto;
@@ -566,6 +512,9 @@ header .current a{
     max-width: 100%;
     margin-bottom: 20px;
 }
+.table-change .fa-angle-double-right{
+    color: green;
+}
 .fa{
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
@@ -614,37 +563,119 @@ footer p{
     padding: 0px 15px;
     font: 16px rubik, sans-serif;
 }
+
 @media(max-width:991px){
     body{
         margin-bottom: 0;
     }
 }
-@media(min-width :1024px){ 
+/*@media(min-width :1024px){ 
     header nav{
     padding-left: 50px;
     padding-right: 50px;
     margin-right: auto;
     margin-left: auto;
     }
-}
-@media(min-width:768px){
-    .navbar{
-        border-radius: 4px;
-    }
+}*/
+#click{
+    display:none;
 }
 @media(max-width:767px){
     .coindetailtop{
         margin-bottom: 30px;
-        width: 170%;
+        width: auto;
     }
 }
- @media(min-width:768px){
-        .navbar header{
-            float: left;
+ @media (max-width:900px){
+     .menu-btn{
+         display:block;
+     }
+     #click:checked ~ ul{
+         left: 0%;
+     }
+       header ul{
+            position:fixed;
+            top: 30px;
+            left:0;
+            background:white;
+            height:100vh;
+            width: 100%;
+            display:block;
+            text-align:left ;
+            transition: all 0.3s ease;
+        }
+        header ul li{
+            margin: 10px 30px;
+            padding:0 100px;
+            display:block;
+        }
+        header ul li a{
+            font-size: 18px;
+            font-weight: 500;
+            font-style:bold;
+            display: block;
+        }
+        header ul li a:hover 
+        header ul li a.active{
+         background:salmon;
+            color:blue;
+        
+        }
+    }
+    @media(max-width:900px){
+        .coindetailtop{
+            text-align: center;
+            position: relative;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-bottom: 30px;
+            margin-top: 200px;
         }
     }
 @media(max-width:991px){
     .table-responsive{
         border:0;
     }
+}
+@media(max-width:768px){
+    .search-box{
+        float:revert;
+        position:relative;
+        width: 50%;
+        min-height:1px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+@media(max-width:768px){
+    #boxes{
+        position: relative;
+    }
+    #boxes .bx1{
+        position: relative;
+        width: 20%;
+    }
+    #boxes .bx2{
+        position: relative;
+        width: 20%;
+    }
+    #boxes .bx3{
+        position: relative;
+        width: 20%;
+    }
+    #boxes .bx4{
+        position: relative;
+        width: 20%;
+    }
+    #boxes .bx5{
+        position: relative;
+        width: 20%;
+    }
+    #boxes .bx6{
+        position: relative;
+        width: 20%;
+    }
+    
+    
 }

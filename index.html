@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -8,33 +7,34 @@
     <link rel="stylesheet" href="./css/style.css">
     <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">"</head>-->
     <script src="https://kit.fontawesome.com/80ae8c780f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
 <body>
     <header>
+        
         <div class="container"></div>
         <div id="branding">
-            <img src="C:\Users\hp\Desktop\cointoper\images\cc_logo.jpg"></image>
-            <ul class="navbar">
             
-               <!--- <label for="check" class="checkbtn">
-                    <i class="fa fa-bars"></i>
-                </label>-->
-                <button type="button" class="navbar-toggle">
-                    <span class="sr-only">Togglenavigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-
-                </button>
-                <li><button type="submit">Home</button></li>
-                <li>ICOs</li>
-                <li>Airdrops</li>
-                <li>News</li>
-                <li>Guides</li>
-                <li>HireExperts</li>
-                <li>Login</li>
+            <img src="C:\Users\hp\Desktop\cointoper\images\cc_logo.jpg"></image>
+            
+            <ul class="navbar">
+                <input type="checkbox" id="click">
+               <!--- <div id="sideMenu">
+                    <span class="fa fa-navicon" id="sideMenuClosed"></span>
+                </div>-->
+                <label for="click" class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                    <li class="active"><button type="submit">Home</button></li>
+                    <li class="active"><a>ICOs</li></a>
+                    <li class="active">Airdrops</li>
+                    <li class="active">News</li>
+                    <li class="active">Guides</li>
+                    <li class="active">HireExperts</li>
+                    <li class="active">Login</li>
             </ul>
-        </div>
+        </div>                
     </header>
 
     <div class="coindetailtop">
@@ -115,7 +115,6 @@
                         <img class="white-circle-top" height="30" draggable="false" onmousedown="return false"
                             src="C:\Users\hp\Desktop\cointoper\images\Cointopper_files\Cointopper_files\zcash-zec.png">
                     </span>
-
                 </div>
 
                 <div class="bx4">
@@ -127,7 +126,6 @@
                         <img class="white-circle-top" height="30" draggable="false" onmousedown="return false"
                             src="C:\Users\hp\Desktop\cointoper\images\Cointopper_files\Cointopper_files\cardano-ada.png">
                     </span>
-
                 </div>
 
                 <div class="bx5">
@@ -139,7 +137,6 @@
                         <img class="white-circle-top" height="30" draggable="false" onmousedown="return false"
                             src="C:\Users\hp\Desktop\cointoper\images\Cointopper_files\Cointopper_files\nem-xem.png">
                     </span>
-
                 </div>
 
                 <div class="bx6">
@@ -173,135 +170,51 @@
     </div>
     <div class="table">
         <div class="container">
-            <!--   <table style="width: 100%">
-                    <tr>
-                        <th>#</th>
-                        <th>NAME</th>
-                        <th>CHANGE</th>
-                        <th>PRICE</th>
-                        <th>24HRPRICE</th>
-                        <th>GRAPH(7DAY)</th>
-                        <th>COINS</th>
-                        <th>MARKETCAP</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td><img src=C:\Users\hp\Desktop\cointoper\images\Cointopper_files\bitcoin-btc.png></td>
-                        <td>Bitcoin</td>
-                        <td>-1.57%</td>
-                        <td>$45,850</td>
-                        <td>$47405</td>
-                        <td><img src="C:\Users\hp\Desktop\cointoper\images\Graph.png"></td>
-                        <td>18.81M</td>
-                        <td>$864.33B</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td><img src="C:\Users\hp\Desktop\cointoper\images\Cointopper_files\ethereum-eth.png"></td>
-                        <td>Ethereum</td>
-                        <td>-3.29%</td>
-                        <td>$3,315.95</td>
-                        <td>$3,557.63</td>
-                        <td><img src="C:\Users\hp\Desktop\cointoper\images\Graph.png"></td>
-                        <td>117.47M</td>
-                        <td>$396.71B</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td><img src="C:\Users\hp\Desktop\cointoper\images\Cointopper_files\starcash-network-stars.png">
-                        </td>
-                        <td>Starcash network</td>
-                        <td>-3.36%</td>
-                        <td>$0.01945</td>
-                        <td>$0.01931</td>
-                        <td><img src="C:\Users\hp\Desktop\cointoper\images\Graph1.png"></td>
-                        <td>10T</td>
-                        <td>$194.45B</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td><img src="C:\Users\hp\Desktop\cointoper\images\Cointopper_files\cardano-ada.png"></td>
-                        <td>Cardano</td>
-                        <td>-4.42%</td>
-                        <td>$2.41</td>
-                        <td>$2.61</td>
-                        <td><img src="C:\Users\hp\Desktop\cointoper\images\Graph1.png"></td>
-                        <td>32.36B</td>
-                        <td>$76.76B</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td><img src="C:\Users\hp\Desktop\cointoper\images\Cointopper_files\Cointopper_files\ripple-xrp-new.png"></td>
-                        <td>Ripple</td>
-                        <td>-1.89%</td>
-                        <td>$1.25</td>
-                        <td>$1.08</td>
-                        <td><img src="C:\Users\hp\Desktop\cointoper\images\Graph.png"></td>
-                        <td>99.99B</td>
-                        <td>$108.89 B</td>
-                    </tr>
-                
-                </table>-->
             <div class="table-responsive">
                 <div class="float threat container">
                     <table class="table-coin-list">
                         <thead>
                             <tr role="row1" class="table sorter heading row">
                                 <th class="tbl number">
-                                    
-                                        <a>#</a>
-                                    
+                                    <a>#</a>
                                 </th>
                                 <th class="table header icon">
-                                    
-                                        <i class="table sorter icon"></i>
-
-                                    
+                                    <i class="table sorter icon"></i>
                                 </th>
                                 <th class="tbl name">
-                                    
-                                        <a>name</a>
-                                        <i class="fa fa-angle-up" aria-hidden="true"></i>
-                                    
+                                    <a>name</a>
+                                    <i class="fa fa-angle-up" aria-hidden="true"></i>
                                 </th>
                                 <th class="tbl change">
-                                    
-                                        <a>change</a>
-                                        <i class="fa fa-angle-up" aria-hidden="true"></i>
-                                    
+                                    <a>change</a>
+                                    <i class="fa fa-angle-up" aria-hidden="true"></i>
                                 </th>
                                 <th class="tbl price">
-                                
-                                        <a>price</a>
-                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                    
+                                    <a>price</a>
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
                                 </th>
                                 <th class="hidden-xs">
-                                    
-                                        <a>24hrs change</a>
-                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                    
+                                    <a>24hrs change</a>
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
                                 </th>
-                              <!--  <th class="tbl graph">
+                                <!--  <th class="tbl graph">
                                     <div class="table sorter header inner">
                                         <a>graph(7 day)</a>
                                         <i class="fa fa-angle-down" aria-hidden="true"></i>
                                     </div>-->
                                 </th>
                                 <th class="coins">
-                                        <a>coins</a>
-                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    <a>coins</a>
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
                                 </th>
                                 <th class="market cap">
-                                        <a>market cap</a>
-                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    <a>market cap</a>
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
                                 </th>
-
                             </tr>
                         </thead>
                     </table>
                 </div>
-
                 <table id="my table" style="width: 100%;">
                     <thead>
                         <tr class="size-row">
@@ -316,13 +229,10 @@
                                 <div class="tbl-cap-title">BITCOIN </div>
                                 <div class="tbl-cap-value">BTC </div>
                             </td>
-
                             <td>
                                 <div class="tbl-change">
+                                    <i class="fa fa-angle-double-right"></i>
                                     -2.46%
-                                    <span>
-                                        <i class="tbl-arrow-up"></i>
-                                    </span>
                                 </div>
                             </td>
                             <td class="coin price value">
@@ -342,7 +252,7 @@
                                     $48232
                                 </div>
                             </td>
-                          <!---<td class="tbl graph">
+                            <!---<td class="tbl graph">
 
                             </td>-->
                             <td class="data text">
@@ -370,10 +280,10 @@
                             </td>
                             <td>
                                 <div class="tbl-change">
-                                    -1.14%
                                     <span>
-                                        <i class="tbl-arrow-up"></i>
+                                        <i class="fa fa-angle-double-right"></i>
                                     </span>
+                                    -1.14%
                             </td>
                             <td class="coin price value">
                                 <div class="tbl-price">$3,621.90</div>
@@ -392,10 +302,9 @@
                                     $3,471.41
                                 </div>
                             </td>
-                           <!--<td class="tbl graph">
+                            <!--<td class="tbl graph">
 
                             </td>-->
-
                             <td class="data text">
                                 <div class="data-coins">117.6M</div>
                             </td>
@@ -444,7 +353,7 @@
                                     $0.02125
                                 </div>
                             </td>
-                           <!---<td class="tbl graph">
+                            <!---<td class="tbl graph">
 
                             </td>-->
 
@@ -495,7 +404,7 @@
                                     $1.06
                                 </div>
                             </td>
-                           <!--- <td class="tbl graph">
+                            <!--- <td class="tbl graph">
 
                             </td>-->
 
@@ -546,7 +455,7 @@
                                     $2.25
                                 </div>
                             </td>
-                           <!--- <td class="tbl graph">
+                            <!--- <td class="tbl graph">
 
                             </td>-->
 
@@ -566,11 +475,6 @@
                     </thead>
                 </table>
             </div>
-
-
-
-
-
         </div>
     </div>
     </div>
