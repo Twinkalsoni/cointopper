@@ -564,6 +564,7 @@ footer p{
     font: 16px rubik, sans-serif;
 }
 
+
 @media(max-width:991px){
     body{
         margin-bottom: 0;
@@ -589,12 +590,13 @@ footer p{
  @media (max-width:900px){
      .menu-btn{
          display:block;
+         position: absolute;
      }
      #click:checked ~ ul{
          left: 0%;
      }
        header ul{
-            position:fixed;
+            position:absolute;
             top: 30px;
             left:0;
             background:white;
@@ -610,7 +612,9 @@ footer p{
             display:block;
         }
         header ul li a{
-            font-size: 18px;
+            position: relative;
+            text-decoration: none;
+            font-size: 16px;
             font-weight: 500;
             font-style:bold;
             display: block;
@@ -619,24 +623,94 @@ footer p{
         header ul li a.active{
          background:salmon;
             color:blue;
-        
+        }
+        .menu-btn a:hover{
+            background-color: blue;
+            color: black;
+        }
+        .navbar-collapse{
+            display: inline-block;
+           /* width: 30px;*/
+            height: 30px;
+            padding: 13px;
+        }
+        .navbar-collapse .menu-btn{
+            display: inline-block;
+            position: relative;
+            right: 0px;
+            top: 0px;
+        }
+        .navbar-collapse .menu-btn .lable{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            padding: 13px;
+        }
+        .navbar1 .menu-btn .lable:hover, .navbar1 :checked~ .menu-btn .lable{
+            background-color: tomato;
+        }
+        .navbar-collapse .menu-btn lable li{
+            display: block;
+            width: 25px;
+            height: 10px;
+            border-top: 2px solid #eee;
         }
     }
     @media(max-width:900px){
-        .coindetailtop{
+        .coindetailtop {
+            text-align: center;
+            position: relative;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 30px;
+            margin-bottom: 30px;
+            margin-top: 200px;
+        }
+    }
+    @media only screen and(min-width:468px){
+        .coindetailtop ul{
+            margin-left: 50px;
             text-align: center;
             position: relative;
             min-height: 1px;
             padding-right: 15px;
             padding-left: 15px;
-            margin-bottom: 30px;
-            margin-top: 200px;
+        }
+    }
+    @media only screen and (min-width:600px){
+ .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+  .coindetailtop{
+      background-color: green;
+  }
+}
+    @media(max-width:468px){
+        .main button{
+            float: revert;
+            margin-top: auto;
         }
     }
 @media(max-width:991px){
     .table-responsive{
         border:0;
+        overflow:hidden;
     }
+}
+@media screen and(max-width:767px){
+    .table-responsive{
+        width: 100%;
+        margin-bottom: 15px;
+    }   
 }
 @media(max-width:768px){
     .search-box{
@@ -650,32 +724,33 @@ footer p{
 }
 @media(max-width:768px){
     #boxes{
-        position: relative;
+        position: relative; 
     }
     #boxes .bx1{
         position: relative;
-        width: 20%;
+        width: 30%;
     }
     #boxes .bx2{
         position: relative;
-        width: 20%;
+        width: 30%;
     }
     #boxes .bx3{
         position: relative;
-        width: 20%;
+        width: 30%;
     }
     #boxes .bx4{
         position: relative;
-        width: 20%;
+        width: 25%;
+        display: none;
     }
     #boxes .bx5{
         position: relative;
-        width: 20%;
+        width: 25%;
+        display: none;
     }
     #boxes .bx6{
         position: relative;
-        width: 20%;
+        width: 25%;
+        display: none;
     }
-    
-    
 }
