@@ -68,13 +68,13 @@ header #branding  {
     margin:15px;
     padding:15px;
 }
-.navbar{
+.navbar-collapse{
     font-weight: 500;
     font-size: 16px;
     display: block;
     float: right;
     margin-top: 7px;
-    margin-left: 260px;
+    margin-left:500px;
     height: auto;
     width: auto;
     border-top: 0;
@@ -416,7 +416,7 @@ header .current a{
     cursor: pointer;
 }
 
-.float threat container{
+.floatthreat{
     overflow-x: hidden;
     position:fixed;
     margin-top: 0px;
@@ -432,7 +432,7 @@ header .current a{
     border-collapse: separate;
     border: 0px none rgb(131, 131,131);
     display: table;
-    width:750px;
+    width:1220px;
     margin: 0px;
     margin-top: 10px;
     cursor: pointer;
@@ -479,7 +479,7 @@ header .current a{
     font-family: 'Rubik',sans-serif;
     line-height: 16px;
     letter-spacing:-0.34px;
-    min-width: 200px;
+    
 }
 .tbl-price1{
     color:#003bb2;
@@ -568,6 +568,7 @@ footer p{
 @media(max-width:991px){
     body{
         margin-bottom: 0;
+        font-size: 22px;
     }
 }
 /*@media(min-width :1024px){ 
@@ -586,8 +587,12 @@ footer p{
         margin-bottom: 30px;
         width: auto;
     }
+    .coindetailtop .row .ul{
+        margin:0 10px;
+        padding:30px;
+    }
 }
- @media (max-width:900px){
+ @media (max-width:765px){
      .menu-btn{
          display:block;
          position: absolute;
@@ -597,7 +602,7 @@ footer p{
      }
        header ul{
             position:absolute;
-            top: 30px;
+            top: 30px;  
             left:0;
             background:white;
             height:100vh;
@@ -608,7 +613,7 @@ footer p{
         }
         header ul li{
             margin: 10px 30px;
-            padding:0 100px;
+            padding: 0 40px;
             display:block;
         }
         header ul li a{
@@ -653,7 +658,7 @@ footer p{
             display: block;
             width: 25px;
             height: 10px;
-            border-top: 2px solid #eee;
+            border-bottom: 2px solid #eee;
         }
     }
     @media(max-width:900px){
