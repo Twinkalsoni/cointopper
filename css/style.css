@@ -561,7 +561,7 @@ header .current a{
 }
 footer{
     background:#e7ebed;
-    margin-top: 100px;
+    margin-top: 30px;
     padding: 35px 0 0;
     color: #fff;
     font-size: 16px;
@@ -578,12 +578,49 @@ footer{
     margin-left: auto;
 }
 .footer-logo{
-    display:flex;
+    /*display:flex;*/
     float: left;
+}
+.footer-link1{
+    float :left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 13%;
+}
+.footer-link2{
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 15%;
+}
+.footer-link3{
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+     width: 15%;
+
+}
+.footer-link4{
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 15%;
+
 }
 .fotter-row{
     margin-right: -15px;
     margin-left: -15px;
+}
+.fotter-row1{
+    width:100%
 }
 img{
     max-width: 200%;
@@ -591,7 +628,7 @@ img{
     vertical-align: middle;
     border: 0;
 }
-ul, li{
+footer ul, li{
     margin: 0;
     padding: 0;
     list-style: none;
@@ -601,7 +638,7 @@ ul, li{
     margin: 10px 0px 26px;
     padding: 0;
     color: #245da6;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 600;
     margin-bottom: 26px;
 }
@@ -609,13 +646,18 @@ h4{
     margin-top: 10px;
 }
 .news-update{
-    width: 40%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 33%;
     float: right;
 }
 .footer-links li, a{
     color: #3d3d3d;
     font-size: 16px;
-    line-height: 31px;
+    line-height: 36px;
+    font-weight: 540;
 }
 .footer-links{
     margin: 5px;
@@ -632,51 +674,10 @@ h4{
     border: 0px;
     border-radius: 8px;
 }
-/*.col-md-3{
-    width: 15%;
-    float: left;
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
+.footer-newsletter{
+    padding-right:15px;
+    padding-left: 45px;
 }
-.col-md-4{
-    width: 33.3333333%;
-    float: left;
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-.col-md-6{
-    width: 50%;
-    float: left;
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-.col-xs-8{
-    float: left;
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-    width: 66.66666667%;
-}
-.col-md-9{
-    float: left;
-}
-.col-md-12{
-    float: left;
-    width: 100%;
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-}*/
-
-
 #news{
     background-color: rgb(36, 93, 166);
     border: 0px;
@@ -733,7 +734,7 @@ h4{
     height: 46px;
 }
 
-p{
+footer p{
     margin: 0 0 10px;
     text-decoration: none;
 
@@ -937,5 +938,41 @@ p{
         position: relative;
         width: 25%;
         display: none;
+    }
+}
+@media (max-width:768px){
+    .footer-link1{
+        width:43%
+    }
+    .footer-link2{
+        width:47%
+    }
+    .footer-link3{
+        width:50%
+    }
+    .footer-link4{
+        width:40%
+    }
+    .news-update{
+        float:left;
+        width:100%;
+    }
+    .footer-newsletter{
+        bottom:70px;
+    }
+    .input-group{
+        width:150%
+    }
+}
+@media (max-width:991px){
+    .footer-newsletter{
+        
+        bottom:365px;
+        right:0;
+        width:100%;
+        padding-left: 15px;
+    }
+    .footer-link-title{
+        margin-bottom: 15px;
     }
 }
