@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cointopper</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/80ae8c780f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <div class="bgimg">
+            <nav class="navbar navbar-expand-md">
+                <div class="container-fluid">
+                    <img src="./cc_logo.jpg" style="max-width: 200px;">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse text-center" id="collapsenavbar">
+                        <ul class="navbar-nav ml-auto">
+                            <!---    <li class="nav-item">
+                            <a href="" class="nav-link text-bold"></a>Home</li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link"></a>ICOs</li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link"></a>Airdrops</li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link"></a>News</li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link"></a>Guides</li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link"></a>HireExperts</li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link"></a>Login</li>-->
+                            <li class="active"><a href="https://cointopper.com">Home</a></li>
+                            <li><a href="https://cointopper.com/ico">ICOs</a></li>
+                            <li><a href="https://cointopper.com/airdrops">Airdrops</a></li>
+                            <li><a href="https://cointopper.com/news">News</a></li>
+                            <li><a href="https://cointopper.com/guides">Guides</a></li>
+                            <li><a href="https://cointopper.com/hire-experts">Hire Experts</a></li>
+                            <li> <a href="https://cointopper.com/signin">Login</a></li>
+
+                        </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="coindetailtop">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-2-5 col-lg-1-5 hidden-xs">
+                    <h4>BTC/USD</h4>
+                    <span class="coin-detail-value" id="bitcoin-head">
+                        $48254.92</span>
+                </div>
+                <div class="col-xs-4 col-sm-12 col-lg-2-5 col-lg-1-5 hidden-xs">
+                    <h4>Cryptocurrencies</h4>
+                    <span class="coin-detail-value"> 1554</span>
+                </div>
+                <div class="col-xs-4 col-sm-12 col-lg-2-5 col-lg-1-5">
+                    <h4>24h volume</h4>
+                    <span class="coin-detail-value"> $137.7 B</span>
+                </div>
+                <div class="col-xs-4 col-sm-12 col-lg-2-5 col-lg-1-5">
+                    <h4>AltCoin M.Cap</h4>
+                    <span class="coin-detail-value"> $-643,758,213,317</span>
+                </div>
+                <div class="col-sm-12 col-lg-2-5 col-lg-1-5 col-5-last">
+                    <h4>Total M.Cap</h4>
+                    <span class="coin-detail-value"> $267 B</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main">
+        <div class="container">
+            <div class="topper-coin">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="section-title pull-left">Top Viewed</h2>
+                        <a href=" " class="btn btn-primary pull-right">View All</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<ul class="slick-dots" style="display: block;" role="tablist">
+        <li class="" role="presentation">
+            <button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 2" tabindex="-1">1</button></li>
+            <li role="presentation" class="slick-active"><button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide03" aria-label="2 of 2" tabindex="-1">2</button></li>
+            <li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control02" aria-controls="slick-slide06" aria-label="3 of 2" tabindex="-1">3</button></li>
+            <li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control03" aria-controls="slick-slide09" aria-label="4 of 2" tabindex="0" aria-selected="true">4</button></li>
+        </ul>  -->
+        <div class="coinlist">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <h2 class="section-title">Cryptocurrencies</h2>
+                    </div>
+
+                    <div class="col-xs-12 col-md-6 coin-list-filter pull right">
+                        <div class="row row-5">
+                            <div class="col-xs-4 col-md-2 padding-5px filter-usd-tbl pull-right">
+                                <div class="select-style">
+                                    <input type="hidden" id="currencyrate" value="1">
+                                    <input type="hidden" id="currencysymbol" value="$">
+                                    <form action="https://cointopper.com" method="POST">
+                                        <input name="_token" type="hidden"
+                                            value="DQVlzzMpwOcGCmGosMUz9bkfnm3J93pa73R02hCr">
+                                        <select id="select-currency" name="currency">
+                                            <option value="AUD">USD</option>
+                                            <option value="BRL">BRL</option>
+                                            <option value="CAD">CAD</option>
+
+                                        </select>
+                                    </form>
+                                </div>
+                                <div class="col-xs-8 col-md-5 padding-5px pull-right">
+                                    <div class="form-group">
+                                        <div class="icon-addon addon-sm">
+                                            <form method="GET" action="https://cointopper.com" accept-charset="UTF-8">
+                                                <input type="text" id="cryptocurrency" placeholder="Search Coin"
+                                                    class="form-control ui-autocomplete-input">
+                                                <label for="serach" class="glyphicon glyphicon-search" rel="tooltip"
+                                                    title="serach"></label>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <div class="container">
+                <div class="floattheat-container">
+                    <table class="table coin-list-table tablesorter tablesorter-default floatthead-table">
+                        <colgroup>
+                            <col style="width: 25px;">
+                            <col style="width: 40px;">
+                            <col style="width: 180px;">
+                            <col style="width: 125px;">
+                            <col style="width: 140px;">
+                            <col style="width: 140px;">
+                            <col style="width: 175px;">
+                            <col style="width: 100px;">
+                            <col style="width: 95px;">
+                        </colgroup>
+                        <thead>
+                            <tr role="row" class="tablesorter-headerrow">
+                                <th class="tablesorter-header">
+                                    <div class="tablesorter-header-inner"># <i class="tablesorter-icon"></i>
+                                    </div>
+
+                                </th>
+                                <th width="4%" class="tbl-bitcoin-icon tablesorter-header tablesorter-headerUnSorted">
+                                    <div class="tablesorter-header-inner">
+                                        <i class="tablesorter-icon"></i>
+                                    </div>
+                                </th>
+                                <th width="18%" class="tbl-name-mcap tablesorter-header tablesorter-headerUnSorted"
+                                    aria-label="NAME:">
+                                    <div class="tablesorter-header-inner">
+                                        <a href="#">NAME<i class="fa fa-angle-up" aria-hidden="true">
+                                            </i></a> <i class="tablesorter-icon"></i>
+                                    </div>
+                                </th>
+                                <th width="12.5%" class="th-change tablesorter-header tablesorter-headerUnSorted"
+                                    data-column="3" role="columnheader" aria-label="CHANGE ">
+                                    <div class="tablesorter-header-inner">
+                                        <a href="#">CHANGE
+                                            <i class="fa fa-angle-up" aria-hidden="true"></i></a>
+                                        <i class="tablesorter-icon"></i>
+                                    </div>
+                                </th>
+                                <th width="14%" class="th-price tablesorter-header tablesorter-headerUnSorted"
+                                    data-column="4" role="columnheader" aria-label="PRICE: ">
+                                    <div class="tablesorter-header-inner"><a href="#">PRICE
+                                            <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                        <i class="tablesorter-icon"></i>
+                                    </div>
+                                </th>
+
+                                <th width="14%" class="hidden-xs tablesorter-header tablesorter-headerUnSorted"
+                                    data-column="5" role="columnheader" 24HR CHANGE:>
+                                    <div class="tablesorter-header-inner"><a href="#">24HR CHANGE
+                                            <i class="fa fa-angle-up" aria-hidden="true"></i></a>
+                                        <i class="tablesorter-icon"></i>
+                                    </div>
+                                </th>
+                                <!--- <th width="17.5%" class="hidden-xs tablesorter-header tablesorter-headerUnSorted"
+                                data-column="6" role="columnheader">
+                                <div class="tablesorter-header-inner">
+                                    <a href="#">Graph (7 Day)</a>
+                                    <i class="tablesorter-icon"></i>
+                                </div>
+                            </th>-->
+                                <th width="10%" class="hidden-xs tablesorter-header tablesorter-headerUnSorted"
+                                    data-column="7" role="columnheader">
+                                    <div class="tablesorter-header-inner"><a href="#">COINS
+                                            <i class="fa fa-angle-up" aria-hidden="true"></i></a>
+                                        <i class="tablesorter-icon"></i>
+                                    </div>
+                                </th>
+                                <th width="9.5%"
+                                    class="hidden-xs text-right tablesorter-header tablesorter-headerUnSorted"
+                                    data-column="8" role="columnheader">
+                                    <div class="tablesorter-header-inner"><a href="#">MARKET CAP
+                                            <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                        <i class="tablesorter-icon"></i>
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table id="my table" class="table coin-list-table">
+                        <colgroup>
+                            <col style="width: 25px;">
+                            <col style="width: 40px;">
+                            <col style="width: 180px;">
+                            <col style="width: 125px;">
+                            <col style="width: 140px;">
+                            <col style="width: 140px;">
+                            <col style="width: 175px;">
+                            <col style="width: 100px;">
+                            <col style="width: 95px;">
+                        </colgroup>
+                        <!--- <thead>
+                        <tr class="size-row" aria-hidden="true" style="height: 17px;">
+                            <th class="floatThead-col" aria-label="# " style="height: 17px;"></th>
+                            <th class="floatThead-col" aria-label=" " style="height: 17px;"></th>
+                            <th class="floatThead-col" aria-label="NAME " style="height: 17px;"> </th>
+                            <th class="floatThead-col" aria-label="CHANGE  " style="height: 17px;"></th>
+                            <th class="floatThead-col" aria-label="PRICE  " style="height: 17px;"></th>
+                            <th class="floatThead-col" aria-label="24HR CHANGE " style="height: 17px;"></th>
+                            <th class="floatThead-col" aria-label="COINS  " style="height: 17px;"></th>
+                            <th class="floatThead-col" aria-label="MARKET CAP  " style="height: 17px;"></th>
+                        </tr>-->
+                        </thead>
+                        <tbody aria-live="polite" aria-relevant="all">
+                            <tr class="coin-row" data-symbol="BTC" role="row">
+                                <td class="tbl-number">1</td>
+                                <td><a>
+                                        <span><img src="./bitcoin-btc.png"></span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="tbl-cap-title">BITCOIN </div>
+                                    <div class="tbl-cap-value">BTC </div>
+                                </td>
+                                <td data-text="0.738888">
+                                    <div class="tbl-change">
+                                        <span class="text-success">
+                                            0.74%
+                                            <i class="tbl-arrow-up"></i>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="coin-price-value-td" data-text="48687.85">
+                                    <div class="tbl-price coin-price-value">$ 48,294</div>
+                                    <div class="tbl-price-2">
+                                        <i class="fa fa-bitcoin"></i>1.00000000
+                                    </div>
+                                    </a>
+                                </td>
+                                <td class="hidden-xs" data-text="49777.5">
+                                    <div class="tbl-price"><i class="tbl-arrow-up"></i>$49778
+                                    </div>
+                                    <div class="tbl-price"><i class="tbl-arrow-down"></i>$47833
+                                    </div>
+                                    </a>
+                                </td>
+
+                                <td data-text="18873906">
+                                    <div class="tbl-coin hidden-xs">
+                                        18.87 M</div>
+                                </td>
+                                <td class="text-right market" data-text="918929904242.1">
+                                    <div class="tbl-mcap hidden-xs">
+                                        $918.93 B
+                                        <br>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="coin-row" data-symbol="BTC" role="row">
+                                <td class="tbl-number">2</td>
+                                <td><a>
+                                        <span><img src="./ethereum-eth.png"></span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="tbl-cap-title">ETHEREUM </div>
+                                    <div class="tbl-cap-value">ETH </div>
+                                </td>
+                                <td data-text="0.738888">
+                                    <div class="tbl-change">
+                                        <span class="text-success">
+                                            2.39%
+                                            <i class="tbl-arrow-up"></i>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="coin-price-value-td" data-text="48687.85">
+                                    <div class="tbl-price coin-price-value">$ 4,043.54</div>
+                                    <div class="tbl-price-2">
+                                        <i class="fa fa-bitcoin"></i>0.08460776
+                                    </div>
+                                    </a>
+                                </td>
+                                <td class="hidden-xs" data-text="49777.5">
+                                    <div class="tbl-price"><i class="tbl-arrow-up"></i>4,256.29
+                                    </div>
+                                    <div class="tbl-price"><i class="tbl-arrow-down"></i>$4,010.53
+                                    </div>
+                                    </a>
+                                </td>
+
+                                <td data-text="18873906">
+                                    <div class="tbl-coin hidden-xs">
+                                        118.35 M</div>
+                                </td>
+                                <td class="text-right market" data-text="918929904242.1">
+                                    <div class="tbl-mcap hidden-xs">
+                                        $487.53 B
+                                        <br>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="coin-row" data-symbol="BTC" role="row">
+                                <td class="tbl-number">3</td>
+                                <td><a>
+                                        <span><img src="./cardano-ada.png"></span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="tbl-cap-title">CARDANO </div>
+                                    <div class="tbl-cap-value">ADA</div>
+                                </td>
+                                <td data-text="0.738888">
+                                    <div class="tbl-change">
+                                        <span class="text-success">
+                                            -5.32%
+                                            <i class="tbl-arrow-up"></i>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="coin-price-value-td" data-text="48687.85">
+                                    <div class="tbl-price coin-price-value">$1.31</div>
+                                    <div class="tbl-price-2">
+                                        <i class="fa fa-bitcoin"></i>0.000002742
+                                    </div>
+                                    </a>
+                                </td>
+                                <td class="hidden-xs" data-text="49777.5">
+                                    <div class="tbl-price"><i class="tbl-arrow-up"></i>$1.45
+                                    </div>
+                                    <div class="tbl-price"><i class="tbl-arrow-down"></i>$1.29
+                                    </div>
+                                    </a>
+                                </td>
+
+                                <td data-text="18873906">
+                                    <div class="tbl-coin hidden-xs">
+                                        32.85B</div>
+                                </td>
+                                <td class="text-right market" data-text="918929904242.1">
+                                    <div class="tbl-mcap hidden-xs">
+                                        $43.85 B
+                                        <br>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="coin-row" data-symbol="BTC" role="row">
+                                <td class="tbl-number">4</td>
+                                <td><a>
+                                        <span><img src="./ripple-xrp-new.png"></span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="tbl-cap-title">Ripple </div>
+                                    <div class="tbl-cap-value">XRP</div>
+                                </td>
+                                <td data-text="0.738888">
+                                    <div class="tbl-change">
+                                        <span class="text-success">
+                                            -1.08%
+                                            <i class="tbl-arrow-up"></i>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="coin-price-value-td" data-text="48687.85">
+                                    <div class="tbl-price coin-price-value">$0.78</div>
+                                    <div class="tbl-price-2">
+                                        <i class="fa fa-bitcoin"></i>0.000001631
+                                    </div>
+                                    </a>
+                                </td>
+                                <td class="hidden-xs" data-text="49777.5">
+                                    <div class="tbl-price"><i class="tbl-arrow-up"></i>$0.86320
+                                    </div>
+                                    <div class="tbl-price"><i class="tbl-arrow-down"></i>$0.77080
+                                    </div>
+                                    </a>
+                                </td>
+
+                                <td data-text="18873906">
+                                    <div class="tbl-coin hidden-xs">
+                                        99.99 B</div>
+                                </td>
+                                <td class="text-right market" data-text="918929904242.1">
+                                    <div class="tbl-mcap hidden-xs">
+                                        $79.4 B
+                                        <br>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="coin-row" data-symbol="BTC" role="row">
+                                <td class="tbl-number">5</td>
+                                <td><a>
+                                        <span><img src="./zcash-zec.png"></span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="tbl-cap-title">Zcash </div>
+                                    <div class="tbl-cap-value">ZEC</div>
+                                </td>
+                                <td data-text="0.738888">
+                                    <div class="tbl-change">
+                                        <span class="text-success">
+                                            3.34%
+                                            <i class="tbl-arrow-up"></i>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="coin-price-value-td" data-text="48687.85">
+                                    <div class="tbl-price coin-price-value">$176.49</div>
+                                    <div class="tbl-price-2">
+                                        <i class="fa fa-bitcoin"></i>0.00364588
+                                    </div>
+                                    </a>
+                                </td>
+                                <td class="hidden-xs" data-text="49777.5">
+                                    <div class="tbl-price"><i class="tbl-arrow-up"></i>$194.63
+                                    </div>
+                                    <div class="tbl-price"><i class="tbl-arrow-down"></i>$170.37
+                                    </div>
+                                    </a>
+                                </td>
+
+                                <td data-text="18873906">
+                                    <div class="tbl-coin hidden-xs">
+                                        11.87 M</div>
+                                </td>
+                                <td class="text-right market" data-text="918929904242.1">
+                                    <div class="tbl-mcap hidden-xs">
+                                        $2.11 B
+                                        <br>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-md-8">
+                    <div class="row">
+                        <div class="col-xs-7 col-md-3">
+                            <div class="footer-logo">
+                                <img src="./cc_logo.jpg" alt="logo" title="cointopper">
+                            </div>
+                            <ul class="footer-links">
+                                <li><a>About</a></li>
+                                <li><a>Contact</a></li>
+                                <li><a>Advertise</a> </li>
+                                <li><a>Hire Experts</a></li>
+                                <li><a>Terms of Use</a></li>
+                                <li><a>Privacy Policy</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="col-xs-5 col-md-3">
+                            <h4 class="footer-link-title">Cryptocurrency</h4>
+                            <ul class="footer-links">
+                                <li><a>Bitcoin </a></li>
+                                <li><a>Ethereum </a></li>
+                                <li><a>Binance Coin </a></li>
+                                <li><a>Ripple </a></li>
+                                <li><a>Tether </a></li>
+                                <li><a class="footer-link-title">Submit Coin</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-7 col-md-3">
+                            <h4 class="footer-link-title">ICOs</h4>
+                            <ul class="footer-links">
+                                <li><a>ACA Network</a></li>
+                                <li><a>AgroTechFarm</a></li>
+                                <li><a>CRYSTALS</a></li>
+                                <li><a>Coin Analyst</a></li>
+                                <li><a>INGOT COIN</a></li>
+                                <li><a class="footer-link-title">Submit ICO</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-5 col-md-3">
+                            <h4 class="footer-link-title">Airdrops</h4>
+                            <ul class="footer-links">
+                                <li>Tachain</li>
+                                <li>imusify</li>
+                                <li>Bidooh</li>
+                                <li>Spiking</li>
+                                <li>Efforce</li>
+                                <li><a class="footer-link-title">Submit Airdrop</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6 footer-row">
+                            <div class="footer-newsletter">
+                                <h4 class="footer-link-title">Newsletter</h4>
+
+                                <form method="POST" class="subscribeForm form-inline text-right subscribeFormFooter">
+                                    <input name="_token" type="hidden" value="tTlihoovQNTanrhCyoZnUYV5tem9YLN2CPn7SNi9">
+                                    <div class="form-inline text-left">
+                                        <div class="input-group">
+                                            <input placeholder="Your Email" class="form-control" id="subscribe_email"
+                                                name="subscribe_email" type="email" value=""> <span
+                                                class="input-group-btn">
+                                                <button type="submit" id="news" class="btn btn-primary">
+                                                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                    <div class="ct2" id="subscribeerrormessagefooter">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-12">
+                                    <h4 class="footer-link-title pull-left footer-download">Download</h4>
+                                </div>
+                            </div>
+                            <div class="footer-app-icon pull-left">
+
+                                <a href="https://play.google.com/store/apps/details?id=com.cointopper.coinlist">
+                                    <img style="max-height: 50px; height: 46px !important;" height="50px" width="150px"
+                                        class="footer-android"
+                                        src="https://cointopper.com/images/android_app_icon.png"></a>
+
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-12">
+                                    <h4 class="footer-link-title pull-left footer-download">&nbsp;</h4>
+                                </div>
+                            </div>
+                            <div class="footer-app-icon pull-left">
+
+                                <a href="https://itunes.apple.com/in/app/cointopper/id1384477178?mt=8" target="_blank">
+                                    <img style="max-height: 50px; height: 46px !important;" width="150px" height="50px"
+                                        class="footer-ios" src="https://cointopper.com/images/ios_app_icon.png"></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="">
+                        <h4 class="footer-link-title">Crypto news &amp; updates</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12 footer-text">
+                            <div class="row">
+
+                                    <div class="col-xs-4 col-md-3 pull-left">
+                                        <img
+                                            src="https://cointopper.com/uploads/topics/us-federal-court-cryptocurrencies-to-be-treated-as-commodities-15387446239784.jpg">
+
+                                    </div>
+                                    <div class="col-xs-8 col-md-9 footer-guide-text">
+                                        <p>US Federal Court: Cryptocurrencies to be treated as commodit...</p>
+                                        <p class="footer-news-date">October 05, 2018</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-12 footer-text">
+                            <div class="row">
+                                    <div class="col-xs-4 col-md-3 pull-left">
+                                        <img src="https://cointopper.com/uploads/topics/coinbase-gets-an-investment-boost-of-500-million-from-tiger-global-valuation-increases-to-8-billion-15385981723678.png">
+
+                                    </div>
+                                    <div class="col-xs-8 col-md-9 footer-guide-text">
+                                        <p>Coinbase Gets an Investment Boost of $500 Million from Tiger...</p>
+                                        <p class="footer-news-date">October 03, 2018</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-12 footer-text">
+                            <div class="row">
+                                
+                                    <div class="col-xs-4 col-md-3 pull-left">
+                                        <img
+                                            src="https://cointopper.com/uploads/topics/finally-ripples-xrapid-goes-live-15385976068960.jpg">
+
+                                    </div>
+                                    <div class="col-xs-8 col-md-9 footer-guide-text">
+                                        <p>Finally, Ripple's xRapid Goes Live</p>
+                                        <p class="footer-news-date">October 03, 2018</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-12 footer-text">
+                            <div class="row">
+                                    <div class="col-xs-4 col-md-3 pull-left">
+                                        <img
+                                            src="https://cointopper.com/uploads/topics/xrp-is-better-than-btc-says-brad-garlinghouse-the-ceo-of-ripple-labs-15385969066753.jpg">
+
+                                    </div>
+                                    <div class="col-xs-8 col-md-9 footer-guide-text">
+                                        <p>XRP is Better Than BTC, says Brad Garlinghouse, the CEO of R...</p>
+                                        <p class="footer-news-date">October 03, 2018</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-12 footer-text">
+                            <div class="row">
+                                    <div class="col-xs-4 col-md-3 pull-left">
+                                        <img
+                                            src="https://cointopper.com/uploads/topics/new-google-update-challenges-cryptojackers-15385526567561.jpg">
+
+                                    </div>
+                                    <div class="col-xs-8 col-md-9 footer-guide-text">
+                                        <p>New Google Update Challenges Cryptojackers</p>
+                                        <p class="footer-news-date">October 03, 2018</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
