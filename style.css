@@ -1,7 +1,7 @@
 body{
     font-family: 'Rubik',sans-serif;   
 }
-    header li a{
+ .navbar-nav li a{
     color: #202020;
     padding: 10px 25px;
     font-size: 16px;
@@ -16,11 +16,42 @@ body{
  color: #fff;
  border-radius:4px;
 }
+.navbar-toggler li a{
+    line-height: 2px;
+}
+.navbar-toggler-icon{
+    border-color: #ddd;
+    position: relative;
+    padding:9px 10px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    margin-right: 15px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+/*.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow:hidden;
+    border:0;
+}
+.navbar-toggler .icon-bar{
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}*/
 .coindetailtop{
     padding: 16px 0;
     width: 100%;
     z-index: 99;
     margin-bottom: 45px;
+    margin-top: 25px;
     background: linear-gradient(to right,#1c60b8 1%,#3c99dd 100%);  
 }
 .coindetailtop h4{
@@ -98,7 +129,7 @@ body{
     font-weight: 500;
     line-height: 28px;
 }
-.slick-dots{
+/*.slick-dots{
     position: absolute;
     bottom: -25px;
     display: block;
@@ -130,7 +161,157 @@ body{
     border: 0;
     outline: 0;
     background: transparent;
+}*/
+.bx1{
+    color: white;
+    font-family: 'Rubik',sans-serif;  
+    width: 15%;
+    margin:5px;
+    padding:5px; 
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-sizing:border-box;
+    background: linear-gradient(to right,#bcc0c5 1%,#3c99dd 100%); 
+    float: left;
+    z-index: 1;
 }
+.bx2{
+    color: white;
+    font-family: 'Rubik',sans-serif;  
+    width: 15%;
+    margin:5px;
+    padding:5px; 
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-sizing:border-box;
+    background:linear-gradient(to left, #105050 1%, #102838 100%);  
+    float: left;
+    z-index: 1;
+}
+.bx3{
+    color: white;
+    font-family: 'Rubik',sans-serif;  
+    width: 15%;
+    margin:5px;
+    padding:5px; 
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-sizing:border-box;
+    background: linear-gradient(to right,#5b60a3 1%,#3c99dd 100%); 
+    float: left;
+    z-index: 1;
+}
+.bx4{
+    color: white;
+    font-family: 'Rubik',sans-serif;  
+    width: 15%;
+    margin:5px;
+    padding:5px; 
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-sizing:border-box;
+    background: linear-gradient(to right,#c4bead 1%,#848a8f 100%); 
+    float: left;
+    z-index: 1;
+}
+.bx5{
+    color: white;
+    font-family: 'Rubik',sans-serif;  
+    width: 15%;
+    margin:5px;
+    padding:5px; 
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-sizing:border-box;
+    background:linear-gradient(to left, #F8B828 1%, #F0B028 100%);
+    float: left;
+    z-index: 1;
+}
+.bx6{
+    color: white;
+    font-family: 'Rubik',sans-serif;  
+    width: 15%;
+    margin:5px;
+    padding:5px; 
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-sizing:border-box;
+    background:linear-gradient(to left,#6d6b69 1%,#fad961 100%); 
+    float: left;
+    z-index: 1;
+}
+.fa fa-angle-double-right{
+    color: white;
+    width: 10px;
+    height:10px;
+    background-size:100px;
+    margin:7px 4px 0 0;
+    float:left;
+}
+.white-circle-top{
+    float:right;
+    background:#f1eded;
+    border-radius: 50%;
+    padding: 4px;
+    width: 25px;
+    height: 25px;
+    
+}
+.top-image{
+    display: block;
+    position:absolute;
+    float:right;
+    max-width: 62px;
+    max-height:62px;
+    right: 2px;
+    bottom: 4px;
+    font-size: 72px;
+    opacity: .4;
+} 
+.box h1 {
+    font-size: 15px;
+    color: white;
+    padding: 0px 0px;
+    margin: 5px 0px;
+    text-align:left;
+    position: relative;
+    display:flex;
+    box-sizing: border-box;
+}
+
+.box p{
+    font-size: 14px;
+    color:white;
+    margin: auto;
+    padding: auto;
+    text-align: left;
+    position: relative;
+}
+.box span{
+    color: white;
+    font-size: 11px;
+    font-family: 'Rubik',sans-serif;
+}
+
+.box:hover h1  {
+
+    width:45%;
+    transition:0.5s;
+    box-sizing:border-box;
+}
+
 .coinlist{
     margin: 45px 0 30px;
 }
@@ -245,9 +426,6 @@ body{
 .table colgroup thead tr th{
     border: 0;
 }
-.table th{
-    border-bottom: 1px solid #dee2e6;
-}
 .fa{
     display: inline-block;
      font: normal normal normal 14px/1 FontAwesome;
@@ -257,7 +435,6 @@ body{
     font-size: 14px;
 }
 .coin-list-table{
-    border: 0px none rgb(131, 131, 131);
     display: table;
     width: 1020px;
     margin: 0px;
@@ -303,8 +480,13 @@ th{
     letter-spacing: -0.34px;
     line-height: 16px;
 }
+.tbl-change{
+    font-size: 16px;
+    letter-spacing: -0.18;
+}
 .tbl-arrow-up{
  background: url(./up_arrow_green.png)left top no-repeat;
+ display: inline-block;
  background-size: 100%;
  width: 12px;
  height:12px;
