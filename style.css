@@ -3,21 +3,29 @@ body{
 }
  .navbar-nav li a{
     color: #202020;
-    padding: 10px 25px;
+    padding: 10px 25px;  
     font-size: 16px;
     font-weight: 500;
     list-style: none;
     text-decoration: none;
-    line-height: 20px;
     cursor: pointer;
 }
 .navbar-nav li.active a{
  background: linear-gradient(to right,#1c60b8 1%,#3c99dd 100%);
- color: #fff;
+ color:white;
  border-radius:4px;
 }
-.navbar-toggler li a{
-    line-height: 2px;
+.nav-item{
+    margin: 0 12px;
+}
+.navbar-nav{
+    margin: 20px;
+}
+.nav-link{
+    color: black;
+}
+header img{
+    max-width: 200px;
 }
 .navbar-toggler-icon{
     border-color: #ddd;
@@ -31,27 +39,12 @@ body{
     border: 1px solid transparent;
     border-radius: 4px;
 }
-/*.sr-only{
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow:hidden;
-    border:0;
-}
-.navbar-toggler .icon-bar{
-    display: block;
-    width: 22px;
-    height: 2px;
-    border-radius: 1px;
-}*/
 .coindetailtop{
     padding: 16px 0;
     width: 100%;
     z-index: 99;
     margin-bottom: 45px;
-    margin-top: 25px;
+    
     background: linear-gradient(to right,#1c60b8 1%,#3c99dd 100%);  
 }
 .coindetailtop h4{
@@ -129,7 +122,7 @@ body{
     font-weight: 500;
     line-height: 28px;
 }
-/*.slick-dots{
+.slick-dots{
     position: absolute;
     bottom: -25px;
     display: block;
@@ -161,96 +154,47 @@ body{
     border: 0;
     outline: 0;
     background: transparent;
-}*/
-.bx1{
-    color: white;
-    font-family: 'Rubik',sans-serif;  
-    width: 15%;
-    margin:5px;
-    padding:5px; 
-    cursor: pointer;
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-    box-sizing:border-box;
-    background: linear-gradient(to right,#bcc0c5 1%,#3c99dd 100%); 
-    float: left;
-    z-index: 1;
 }
-.bx2{
-    color: white;
-    font-family: 'Rubik',sans-serif;  
-    width: 15%;
-    margin:5px;
-    padding:5px; 
-    cursor: pointer;
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-    box-sizing:border-box;
-    background:linear-gradient(to left, #105050 1%, #102838 100%);  
-    float: left;
-    z-index: 1;
+.slick-dotted.slick-slider{
+    margin-bottom: 30px;
 }
-.bx3{
-    color: white;
-    font-family: 'Rubik',sans-serif;  
-    width: 15%;
-    margin:5px;
-    padding:5px; 
-    cursor: pointer;
-    border-radius: 10px;
+.slick-slider{
     position: relative;
-    overflow: hidden;
-    box-sizing:border-box;
-    background: linear-gradient(to right,#5b60a3 1%,#3c99dd 100%); 
-    float: left;
-    z-index: 1;
+    display: block;
+    box-sizing: border-box;
 }
-.bx4{
-    color: white;
-    font-family: 'Rubik',sans-serif;  
-    width: 15%;
-    margin:5px;
-    padding:5px; 
-    cursor: pointer;
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-    box-sizing:border-box;
-    background: linear-gradient(to right,#c4bead 1%,#848a8f 100%); 
-    float: left;
-    z-index: 1;
+.slick-initialized .slick-slide{
+    display: block;
 }
-.bx5{
-    color: white;
-    font-family: 'Rubik',sans-serif;  
-    width: 15%;
-    margin:5px;
-    padding:5px; 
-    cursor: pointer;
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-    box-sizing:border-box;
-    background:linear-gradient(to left, #F8B828 1%, #F0B028 100%);
-    float: left;
-    z-index: 1;
+.top-coin-box .slick-list{
+    margin:0 -5px;
 }
-.bx6{
-    color: white;
-    font-family: 'Rubik',sans-serif;  
-    width: 15%;
-    margin:5px;
-    padding:5px; 
-    cursor: pointer;
-    border-radius: 10px;
+.slick-track{
     position: relative;
-    overflow: hidden;
-    box-sizing:border-box;
-    background:linear-gradient(to left,#6d6b69 1%,#fad961 100%); 
-    float: left;
-    z-index: 1;
+    top:0;
+    left:0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1;
+    width: 4472px;
+    
+}
+.top-coin-box{
+    padding: 0;
+    margin: 0;
+}
+.top-box-detail{
+    width: 172px;
+}
+.slick-slide a{
+    outline: none;
+}
+.top-coin-price{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 24px;
 }
 .fa fa-angle-double-right{
     color: white;
@@ -261,57 +205,53 @@ body{
     float:left;
 }
 .white-circle-top{
-    float:right;
     background:#f1eded;
     border-radius: 50%;
-    padding: 4px;
-    width: 25px;
-    height: 25px;
-    
+    padding: 4px; 
+}
+.topp-per{
+    font-size: 11px;
+}
+.coin-topp-up{
+    background: url(./down_arrow.png)left top no-repeat;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-size: 100%;
+    margin: 7px 4px 0 0;
+    float: left;
 }
 .top-image{
     display: block;
     position:absolute;
     float:right;
     max-width: 62px;
-    max-height:62px;
+    max-height:85px;
     right: 2px;
     bottom: 4px;
     font-size: 72px;
     opacity: .4;
 } 
-.box h1 {
-    font-size: 15px;
+.topp-box-detail h5{
     color: white;
-    padding: 0px 0px;
-    margin: 5px 0px;
-    text-align:left;
-    position: relative;
-    display:flex;
-    box-sizing: border-box;
+    font-size: 12px;
+    margin: 0;
+    letter-spacing: .5px;
+    font-weight: 300;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow:hidden ;
 }
-
-.box p{
-    font-size: 14px;
-    color:white;
-    margin: auto;
-    padding: auto;
-    text-align: left;
-    position: relative;
+.topp-box-inner{
+margin: 5px;
+padding: 10px;
+color: #fff;
+position: relative;
+border-radius: 10px;
 }
-.box span{
-    color: white;
-    font-size: 11px;
-    font-family: 'Rubik',sans-serif;
+.slick-slide image{
+    display: block;
 }
-
-.box:hover h1  {
-
-    width:45%;
-    transition:0.5s;
-    box-sizing:border-box;
-}
-
 .coinlist{
     margin: 45px 0 30px;
 }
